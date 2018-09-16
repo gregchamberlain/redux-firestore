@@ -1,7 +1,3 @@
-class MyModule {
-  go() {
-    console.log('Go!');
-  }
-}
+const StarterPackage = 'HELLO WORLD';
 
-export default MyModule;
+export default StarterPackage;

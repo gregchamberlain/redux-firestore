@@ -5,13 +5,32 @@
   "browser": "dist/ts-package-starter.umd.js",
   "typings": "lib/index.d.ts",
   "scripts": {
-    "build": "rimraf lib/ dist/ && tsc && rollup -c"
+    "test": "jest",
+    "build": "rimraf lib/ dist/ && tsc && rollup -c",
+    "prepublish": "yarn build"
   },
   "devDependencies": {
+    "@types/jest": "^23.3.2",
+    "jest": "^23.6.0",
     "rimraf": "^2.6.2",
     "rollup": "^0.65.2",
     "rollup-plugin-commonjs": "^9.1.6",
     "rollup-plugin-node-resolve": "^3.4.0",
+    "ts-jest": "^23.1.4",
     "typescript": "^3.0.3"
+  },
+  "jest": {
+    "transform": {
+      "^.+\\.tsx?$": "ts-jest"
+    },
+    "testRegex": "(/__tests__/.*|(\\.|/)(test|spec))\\.(jsx?|tsx?)$",
+    "moduleFileExtensions": [
+      "ts",
+      "tsx",
+      "js",
+      "jsx",
+      "json",
+      "node"
+    ]
   }
 }
