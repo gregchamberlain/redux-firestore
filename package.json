@@ -14,6 +14,12 @@
     "type": "git",
     "url": "git+https://github.com/gregchamberlain/ts-package-starter.git"
   },
+  "files": [
+    "LICENSE",
+    "README.md",
+    "dist/",
+    "lib/"
+  ],
   "scripts": {
     "test": "jest",
     "build": "rimraf lib/ dist/ && tsc && rollup -c config/rollup/rollup.config.js"
