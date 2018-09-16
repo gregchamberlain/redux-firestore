@@ -6,8 +6,7 @@
   "typings": "lib/index.d.ts",
   "scripts": {
     "test": "jest",
-    "build": "rimraf lib/ dist/ && tsc && rollup -c",
-    "prepublish": "yarn build"
+    "build": "rimraf lib/ dist/ && tsc && rollup -c"
   },
   "devDependencies": {
     "@types/jest": "^23.3.2",
