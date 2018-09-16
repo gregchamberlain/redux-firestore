@@ -50,13 +50,13 @@ workflows:
     jobs:
       - build:
           filters:
-            tag:
+            tags:
               only: /.*/
       - test:
           requires:
             - build
           filters:
-            tag:
+            tags:
               only: /.*/
       - deploy:
           requires:
