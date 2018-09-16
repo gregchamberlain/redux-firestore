@@ -1,5 +1,6 @@
 {
   "name": "ts-package-starter",
+  "version": "0.1.0",
   "main": "dist/ts-package-starter.cjs.js",
   "module": "lib/index.js",
   "browser": "dist/ts-package-starter.umd.js",
