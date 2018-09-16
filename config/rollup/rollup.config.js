@@ -1,5 +1,6 @@
 import commonjs from 'rollup-plugin-commonjs';
 import pkg from '../../package.json';
+import replace from 'rollup-plugin-replace';
 import resolve from 'rollup-plugin-node-resolve';
 import sourcemaps from 'rollup-plugin-sourcemaps';
 
@@ -27,7 +28,14 @@ export default [
       sourcemap: true,
       globals: {},
     },
-    plugins: [resolve(), commonjs(), sourcemaps()],
+    plugins: [
+      resolve(),
+      commonjs(),
+      sourcemaps(),
+      replace({
+        'process.env.NODE_ENV': JSON.stringify('production'),
+      }),
+    ],
     onwarn,
   },
   {
