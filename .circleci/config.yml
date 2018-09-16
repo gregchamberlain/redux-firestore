@@ -42,7 +42,7 @@ jobs:
     steps:
       - attach_workspace:
           at: ~/repo
-      -run: echo "Hello, deploy!"
+      - run: echo "Hello, deploy!"
 
 workflows:
   version: 2
