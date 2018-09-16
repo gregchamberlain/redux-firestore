@@ -42,7 +42,13 @@ jobs:
     steps:
       - attach_workspace:
           at: ~/repo
-      - run: echo "Hello, publish!"
+
+      - run:
+          name: Authenticate with npm registry
+          command: echo "//registry.npmjs.org/:_authToken=$npm_TOKEN" > ~/repo/.npmrc
+      - run:
+          name: Publish package
+          command: yarn publish
 
 workflows:
   version: 2
