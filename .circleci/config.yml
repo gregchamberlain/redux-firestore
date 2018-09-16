@@ -37,16 +37,16 @@ jobs:
 
       - run: yarn test
 
-  deploy:
+  publish:
     <<: *defaults
     steps:
       - attach_workspace:
           at: ~/repo
-      - run: echo "Hello, deploy!"
+      - run: echo "Hello, publish!"
 
 workflows:
   version: 2
-  build-test-deploy:
+  build-test-publish:
     jobs:
       - build:
           filters:
@@ -58,7 +58,7 @@ workflows:
           filters:
             tags:
               only: /.*/
-      - deploy:
+      - publish:
           requires:
             - test
           filters:
