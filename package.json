@@ -1,6 +1,6 @@
 {
   "name": "ts-package-starter",
-  "version": "0.1.1",
+  "version": "0.1.0",
   "license": "MIT",
   "main": "dist/ts-package-starter.cjs.js",
   "module": "lib/index.js",
