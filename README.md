@@ -26,10 +26,8 @@ yarn install
 
 ## Testing
 
-This project has testing setup through jest. Tests are located in the
-`__tests__` directory.'
-
-Run tests with:
+This project has testing setup through [Jest](https://jestjs.io/). Tests are
+located in the `__tests__` directory, and can be run with:
 
 ```
 yarn test
