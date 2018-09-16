@@ -6,6 +6,14 @@
   "module": "lib/index.js",
   "browser": "dist/ts-package-starter.umd.js",
   "typings": "lib/index.d.ts",
+  "bugs": {
+    "url": "https://github.com/gregchamberlain/ts-package-starter/issues"
+  },
+  "homepage": "https://github.com/gregchamberlain/ts-package-starter#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gregchamberlain/ts-package-starter.git"
+  },
   "scripts": {
     "test": "jest",
     "build": "rimraf lib/ dist/ && tsc && rollup -c config/rollup/rollup.config.js"
