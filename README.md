@@ -2,7 +2,7 @@
 
 [![CircleCI](https://circleci.com/gh/gregchamberlain/ts-package-starter/tree/master.svg?style=svg)](https://circleci.com/gh/gregchamberlain/ts-package-starter/tree/master)
 
-## Setup
+## Initial Setup
 
 ```
 git clone https://github.com/gregchamberlain/ts-package-starter.git <your-package-name>
@@ -19,6 +19,8 @@ git remote rename origin base
 ```
 
 Replace all `ts-package-starter` in `package.json` with your package name.
+
+Update the LICENSE file accordingly.
 
 ```
 yarn install
