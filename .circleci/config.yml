@@ -23,8 +23,7 @@ jobs:
             - node_modules
           key: v1-dependencies-{{ checksum "package.json" }}
 
-      - run:
-          name: yarn build
+      - run: yarn build
 
       - persist_to_workspace:
           root: ~/repo
