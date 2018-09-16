@@ -8,7 +8,7 @@
   "typings": "lib/index.d.ts",
   "scripts": {
     "test": "jest",
-    "build": "rimraf lib/ dist/ && tsc && rollup -c"
+    "build": "rimraf lib/ dist/ && tsc && rollup -c config/rollup/rollup.config.js"
   },
   "devDependencies": {
     "@types/jest": "^23.3.2",
