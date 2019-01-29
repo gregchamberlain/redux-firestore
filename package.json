@@ -1,18 +1,18 @@
 {
-  "name": "ts-package-starter",
+  "name": "@gdc/redux-firestore",
   "version": "0.1.0",
   "license": "MIT",
-  "main": "dist/ts-package-starter.cjs.js",
+  "main": "dist/redux-firestore.cjs.js",
   "module": "lib/index.js",
-  "browser": "dist/ts-package-starter.umd.js",
+  "browser": "dist/redux-firestore.umd.js",
   "typings": "lib/index.d.ts",
   "bugs": {
-    "url": "https://github.com/gregchamberlain/ts-package-starter/issues"
+    "url": "https://github.com/gregchamberlain/redux-firestore/issues"
   },
-  "homepage": "https://github.com/gregchamberlain/ts-package-starter#readme",
+  "homepage": "https://github.com/gregchamberlain/redux-firestore#readme",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/gregchamberlain/ts-package-starter.git"
+    "url": "git+https://github.com/gregchamberlain/redux-firestore.git"
   },
   "files": [
     "LICENSE",
